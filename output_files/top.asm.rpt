@@ -1,5 +1,5 @@
 Assembler report for top
-Tue Sep 22 10:17:28 2020
+Thu Oct 29 09:48:14 2020
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/output_files/top.sof
+  5. Assembler Device Options: V:/vrds/output_files/top.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Sep 22 10:17:28 2020 ;
+; Assembler Status      ; Successful - Thu Oct 29 09:48:14 2020 ;
 ; Revision Name         ; top                                   ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,24 +53,24 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                                               ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                                               ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/output_files/top.sof ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------+
+; Assembler Generated Files    ;
++------------------------------+
+; File Name                    ;
++------------------------------+
+; V:/vrds/output_files/top.sof ;
++------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/output_files/top.sof ;
-+----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                                                          ;
-+----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Device         ; EP4CE10F17C8                                                                                                                                                     ;
-; JTAG usercode  ; 0x003934D3                                                                                                                                                       ;
-; Checksum       ; 0x003934D3                                                                                                                                                       ;
-+----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------+
+; Assembler Device Options: V:/vrds/output_files/top.sof ;
++----------------+---------------------------------------+
+; Option         ; Setting                               ;
++----------------+---------------------------------------+
+; Device         ; EP4CE10F17C8                          ;
+; JTAG usercode  ; 0x0039A2EB                            ;
+; Checksum       ; 0x0039A2EB                            ;
++----------------+---------------------------------------+
 
 
 +--------------------+
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
-    Info: Processing started: Tue Sep 22 10:17:26 2020
+    Info: Processing started: Thu Oct 29 09:48:12 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off project -c top
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Tue Sep 22 10:17:28 2020
+    Info: Peak virtual memory: 4759 megabytes
+    Info: Processing ended: Thu Oct 29 09:48:14 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

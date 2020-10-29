@@ -291,7 +291,6 @@ module VirtualDS2431(nRst,
     //
     // debug, sent all memory dat by uart
     //
-    assign memoryUpdated = (flowState == FLOW_AFTER_PROGRAMED)?1'd1:1'd0;
     debug memoryMonitor(
     .nRst(nRst),
     .clk(clk),

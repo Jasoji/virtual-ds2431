@@ -1,5 +1,5 @@
 EDA Netlist Writer report for top
-Tue Sep 22 10:17:50 2020
+Thu Oct 29 09:49:20 2020
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Sep 22 10:17:50 2020 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 29 09:49:19 2020 ;
 ; Revision Name             ; top                                   ;
 ; Top-level Entity Name     ; top                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                                                          ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                                                     ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top_8_1200mv_85c_slow.vo     ;
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top_8_1200mv_0c_slow.vo      ;
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top_min_1200mv_0c_fast.vo    ;
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top.vo                       ;
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top_8_1200mv_85c_v_slow.sdo  ;
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top_8_1200mv_0c_v_slow.sdo   ;
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top_min_1200mv_0c_v_fast.sdo ;
-; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/top_v.sdo                    ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Simulation Generated Files                               ;
++----------------------------------------------------------+
+; Generated Files                                          ;
++----------------------------------------------------------+
+; V:/vrds/simulation/modelsim/top_8_1200mv_85c_slow.vo     ;
+; V:/vrds/simulation/modelsim/top_8_1200mv_0c_slow.vo      ;
+; V:/vrds/simulation/modelsim/top_min_1200mv_0c_fast.vo    ;
+; V:/vrds/simulation/modelsim/top.vo                       ;
+; V:/vrds/simulation/modelsim/top_8_1200mv_85c_v_slow.sdo  ;
+; V:/vrds/simulation/modelsim/top_8_1200mv_0c_v_slow.sdo   ;
+; V:/vrds/simulation/modelsim/top_min_1200mv_0c_v_fast.sdo ;
+; V:/vrds/simulation/modelsim/top_v.sdo                    ;
++----------------------------------------------------------+
 
 
 +-----------------------------+
@@ -89,20 +89,20 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
-    Info: Processing started: Tue Sep 22 10:17:39 2020
+    Info: Processing started: Thu Oct 29 09:48:46 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off project -c top
-Info (204019): Generated file top_8_1200mv_85c_slow.vo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file top_8_1200mv_0c_slow.vo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file top_min_1200mv_0c_fast.vo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file top.vo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file top_8_1200mv_85c_v_slow.sdo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file top_8_1200mv_0c_v_slow.sdo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file top_min_1200mv_0c_v_fast.sdo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file top_v.sdo in folder "C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_8_1200mv_85c_slow.vo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_8_1200mv_0c_slow.vo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_min_1200mv_0c_fast.vo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top.vo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_8_1200mv_85c_v_slow.sdo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_8_1200mv_0c_v_slow.sdo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_min_1200mv_0c_v_fast.sdo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_v.sdo in folder "V:/vrds/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4770 megabytes
-    Info: Processing ended: Tue Sep 22 10:17:50 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Processing ended: Thu Oct 29 09:49:20 2020
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:00:12
 
 

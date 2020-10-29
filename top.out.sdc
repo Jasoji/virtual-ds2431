@@ -43,10 +43,6 @@ create_clock -name {VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk} -period 1000
 create_clock -name {clk} -period 20.000 -waveform { 0.000 10.000 } [get_ports { clk }]
 create_clock -name {VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q} -period 20.000 -waveform { 0.000 10.000 } [get_registers { VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q }]
 create_clock -name {VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory} -period 20.000 -waveform { 0.000 10.000 } [get_registers { VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory }]
-create_clock -name {VirtualDS2431:vds2|VirtualDS2431_IO:dsio|posPulse:io1|q} -period 20.000 -waveform { 0.000 10.000 } [get_registers {VirtualDS2431:vds2|VirtualDS2431_IO:dsio|posPulse:io1|q}]
-create_clock -name {VirtualDS2431:vds2|VirtualDS2431_IO:dsio|posPulse:trig1|q} -period 10.000 -waveform { 0.000 5.000 } [get_registers {VirtualDS2431:vds2|VirtualDS2431_IO:dsio|posPulse:trig1|q}]
-create_clock -name {VirtualDS2431:vds2|VirtualDS2431_IO:dsio|usClk} -period 1000.000 -waveform { 0.000 500.000 } [get_registers {VirtualDS2431:vds2|VirtualDS2431_IO:dsio|usClk}]
-create_clock -name {VirtualDS2431:vds2|VirtualDS2431_main:main|writeToMemory} -period 20.000 -waveform { 0.000 10.000 } [get_registers {VirtualDS2431:vds2|VirtualDS2431_main:main|writeToMemory}]
 
 
 #**************************************************************
