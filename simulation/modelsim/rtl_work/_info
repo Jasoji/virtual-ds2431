@@ -1,0 +1,337 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/simulation/modelsim
+vcrc16
+Z1 !s110 1600583077
+!i10b 1
+!s100 <je_Q^F04fJGzk1N<<Ke`1
+IKNhMTN@o<FOcg;2bT6hP=2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1600359580
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/crc16.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/crc16.v
+L0 3
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1600583077.150000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/crc16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/crc16.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl}
+vnegPulse
+R1
+!i10b 1
+!s100 d1_b2[LYmWn;28`V>m[eM1
+I;P>Dn?O?656CzT>hh;i;T1
+R2
+R0
+w1600359639
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/negPulse.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/negPulse.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583077.428000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/negPulse.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/negPulse.v|
+!i113 1
+R4
+R5
+nneg@pulse
+vposPulse
+R1
+!i10b 1
+!s100 ]EoecmBKLH7dg^bCmaII[2
+IS_bXeNFHVN;eCJCacjef:0
+R2
+R0
+w1600359662
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/posPulse.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/posPulse.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583077.729000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/posPulse.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/posPulse.v|
+!i113 1
+R4
+R5
+npos@pulse
+vtop
+!s110 1600583076
+!i10b 1
+!s100 H7A_=P6JZgjlKd=_D@l[M3
+I2BGU9:YR>m^mFonB7kDIk3
+R2
+R0
+w1600580742
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/top.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583076.896000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/top.v|
+!i113 1
+R4
+R5
+vtop_tb
+Z6 !s110 1600583080
+!i10b 1
+!s100 dF>PF]kdMNC@kD<VO:@[c3
+IM8nnV:^WfAY^Q4n@25]^D0
+R2
+R0
+w1600583060
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench/top_tb.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench/top_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1600583080.904000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench/top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench/top_tb.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work {+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench}
+vVirtualDS2431
+Z7 !s110 1600583078
+!i10b 1
+!s100 74HHL;>8<W6FY]8Ga?o862
+InJDVMh]UcW<U2;L=``>do1
+R2
+R0
+w1600580813
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583077.998000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431
+vVirtualDS2431_IO
+R7
+!i10b 1
+!s100 W3zh9a6GJg6Pk3ohm76G63
+I;BOJ<E>Uf:Y5nco;G9<6O0
+R2
+R0
+w1600581777
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_IO.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_IO.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583078.304000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_IO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_IO.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_@i@o
+vVirtualDS2431_main
+R7
+!i10b 1
+!s100 0b4FiX6Kk040>3I1nBM>g2
+I@j9`FLTeISbRMJcUo20f;0
+R2
+R0
+w1600580877
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_main.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_main.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583078.599000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_main.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_main
+vVirtualDS2431_MEM_CopyScratchpad
+Z8 !s110 1600583079
+!i10b 1
+!s100 JQ^_E43d<^z?8nA<T=JMV1
+ILfLZK2joOOhAC9z4Qf:nJ3
+R2
+R0
+w1600450779
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_CopyScratchpad.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_CopyScratchpad.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583079.170000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_CopyScratchpad.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_CopyScratchpad.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_@m@e@m_@copy@scratchpad
+vVirtualDS2431_MEM_ReadMemory
+R8
+!i10b 1
+!s100 =OfjE1AOnHl]z[nBNN>Ji3
+IFSQNan76ajQOPOY6H;z3G1
+R2
+R0
+w1600450783
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadMemory.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadMemory.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583079.455000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadMemory.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_@m@e@m_@read@memory
+vVirtualDS2431_MEM_ReadScratchpad
+R8
+!i10b 1
+!s100 CGbI[UC92P2f4=G1ioHh>3
+IV_H]T?]aXS>RI4g?3MKN11
+R2
+R0
+w1600450787
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadScratchpad.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadScratchpad.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583079.756000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadScratchpad.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadScratchpad.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_@m@e@m_@read@scratchpad
+vVirtualDS2431_MEM_WriteScratchpad
+R6
+!i10b 1
+!s100 >4^`jGAES>SiXILbE><Qh0
+I[N8l^26m[QHW@nRZ15Olm0
+R2
+R0
+w1600450275
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_WriteScratchpad.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_WriteScratchpad.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583080.034000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_WriteScratchpad.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_WriteScratchpad.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_@m@e@m_@write@scratchpad
+vVirtualDS2431_memory
+R7
+!i10b 1
+!s100 MU1BHUJeK:W3cc[ekZVeM1
+IH>:cV3?ifeiRH5>><OXi00
+R2
+R0
+w1600359967
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_memory.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583078.900000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_memory.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_memory
+vvirtualDS2431_ROM_MatchRom
+R6
+!i10b 1
+!s100 MC5]T[Za=CS6Y49LIgbk]1
+I8?:J?>EMYeAG`;X2PCB[C1
+R2
+R0
+w1600360155
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/virtualDS2431_ROM_MatchRom.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/virtualDS2431_ROM_MatchRom.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583080.337000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/virtualDS2431_ROM_MatchRom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/virtualDS2431_ROM_MatchRom.v|
+!i113 1
+R4
+R5
+nvirtual@d@s2431_@r@o@m_@match@rom
+vVirtualDS2431_ROM_ReadRom
+R6
+!i10b 1
+!s100 7I>4N]3^O]jGzIHi^5mal0
+IEBai[:kj;MagNMcdQC[M51
+R2
+R0
+w1600450810
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1600583080.619000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v|
+!i113 1
+R4
+R5
+n@virtual@d@s2431_@r@o@m_@read@rom

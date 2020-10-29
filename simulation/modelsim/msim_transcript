@@ -1,0 +1,206 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/top.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:36 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 14:24:36 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/crc16.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:37 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/crc16.v 
+# -- Compiling module crc16
+# 
+# Top level modules:
+# 	crc16
+# End time: 14:24:37 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/negPulse.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:37 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/negPulse.v 
+# -- Compiling module negPulse
+# 
+# Top level modules:
+# 	negPulse
+# End time: 14:24:37 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/posPulse.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:37 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/posPulse.v 
+# -- Compiling module posPulse
+# 
+# Top level modules:
+# 	posPulse
+# End time: 14:24:37 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:37 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431.v 
+# -- Compiling module VirtualDS2431
+# 
+# Top level modules:
+# 	VirtualDS2431
+# End time: 14:24:38 on Sep 20,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_IO.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:38 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_IO.v 
+# -- Compiling module VirtualDS2431_IO
+# 
+# Top level modules:
+# 	VirtualDS2431_IO
+# End time: 14:24:38 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_main.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:38 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_main.v 
+# -- Compiling module VirtualDS2431_main
+# 
+# Top level modules:
+# 	VirtualDS2431_main
+# End time: 14:24:38 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_memory.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:38 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_memory.v 
+# -- Compiling module VirtualDS2431_memory
+# 
+# Top level modules:
+# 	VirtualDS2431_memory
+# End time: 14:24:38 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_CopyScratchpad.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:39 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_CopyScratchpad.v 
+# -- Compiling module VirtualDS2431_MEM_CopyScratchpad
+# 
+# Top level modules:
+# 	VirtualDS2431_MEM_CopyScratchpad
+# End time: 14:24:39 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadMemory.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:39 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadMemory.v 
+# -- Compiling module VirtualDS2431_MEM_ReadMemory
+# 
+# Top level modules:
+# 	VirtualDS2431_MEM_ReadMemory
+# End time: 14:24:39 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadScratchpad.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:39 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadScratchpad.v 
+# -- Compiling module VirtualDS2431_MEM_ReadScratchpad
+# 
+# Top level modules:
+# 	VirtualDS2431_MEM_ReadScratchpad
+# End time: 14:24:39 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_WriteScratchpad.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:40 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_WriteScratchpad.v 
+# -- Compiling module VirtualDS2431_MEM_WriteScratchpad
+# 
+# Top level modules:
+# 	VirtualDS2431_MEM_WriteScratchpad
+# End time: 14:24:40 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/virtualDS2431_ROM_MatchRom.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:40 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/virtualDS2431_ROM_MatchRom.v 
+# -- Compiling module virtualDS2431_ROM_MatchRom
+# 
+# Top level modules:
+# 	virtualDS2431_ROM_MatchRom
+# End time: 14:24:40 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/rtl {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:40 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v 
+# -- Compiling module VirtualDS2431_ROM_ReadRom
+# 
+# Top level modules:
+# 	VirtualDS2431_ROM_ReadRom
+# End time: 14:24:40 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/K/OneDrive\ -\ stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0\ OK\ without\ uart/virtualDs2431_15.0_OKWithoutUart/testbench {C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench/top_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:24:40 on Sep 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench" C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/testbench/top_tb.v 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 14:24:40 on Sep 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+# vsim -gui "+altera" -l msim_transcript -do "top_run_msim_rtl_verilog.do" 
+# Start time: 14:24:41 on Sep 20,2020
+# Loading work.top_tb
+# Loading work.top
+# Loading work.VirtualDS2431
+# Loading work.VirtualDS2431_IO
+# Loading work.posPulse
+# Loading work.negPulse
+# Loading work.VirtualDS2431_memory
+# Loading work.VirtualDS2431_ROM_ReadRom
+# Loading work.virtualDS2431_ROM_MatchRom
+# Loading work.VirtualDS2431_MEM_ReadMemory
+# Loading work.VirtualDS2431_MEM_WriteScratchpad
+# Loading work.crc16
+# Loading work.VirtualDS2431_MEM_ReadScratchpad
+# Loading work.VirtualDS2431_MEM_CopyScratchpad
+# Loading work.VirtualDS2431_main
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: linscon  Hostname: DESKTOP-7V4VLMA  ProcessID: 11036
+# 
+#           Attempting to use alternate WLF file "./wlftwsiz0k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftwsiz0k
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Module VirtualDS2431_ROM_ReadRom at C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v line 36
+# Simulation Breakpoint: Break in Module VirtualDS2431_ROM_ReadRom at C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v line 36
+# MACRO ./top_run_msim_rtl_verilog.do PAUSED at line 30
+# End time: 14:49:26 on Sep 20,2020, Elapsed time: 0:24:45
+# Errors: 0, Warnings: 2

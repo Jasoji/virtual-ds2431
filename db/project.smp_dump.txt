@@ -1,0 +1,76 @@
+
+State Machine - |top|VirtualDS2431:vds1|debug:memoryMonitor|printState
+Name printState.11 printState.10 printState.01 printState.00 
+printState.00 0 0 0 0 
+printState.01 0 0 1 1 
+printState.10 0 1 0 1 
+printState.11 1 0 0 1 
+
+State Machine - |top|VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState
+Name txState.1010 txState.1001 txState.1000 txState.0111 txState.0110 txState.0101 txState.0100 txState.0011 txState.0010 txState.0001 txState.0000 
+txState.0000 0 0 0 0 0 0 0 0 0 0 0 
+txState.0001 0 0 0 0 0 0 0 0 0 1 1 
+txState.0010 0 0 0 0 0 0 0 0 1 0 1 
+txState.0011 0 0 0 0 0 0 0 1 0 0 1 
+txState.0100 0 0 0 0 0 0 1 0 0 0 1 
+txState.0101 0 0 0 0 0 1 0 0 0 0 1 
+txState.0110 0 0 0 0 1 0 0 0 0 0 1 
+txState.0111 0 0 0 1 0 0 0 0 0 0 1 
+txState.1000 0 0 1 0 0 0 0 0 0 0 1 
+txState.1001 0 1 0 0 0 0 0 0 0 0 1 
+txState.1010 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_main:main|funState
+Name funState.FUN_GET_TA2 funState.FUN_HANDLE_RESULT funState.FUN_GET_TA1 funState.FUN_WAIT_FOR_CMD_DONE funState.FUN_GET_CMD 
+funState.FUN_GET_CMD 0 0 0 0 0 
+funState.FUN_WAIT_FOR_CMD_DONE 0 0 0 1 1 
+funState.FUN_GET_TA1 0 0 1 0 1 
+funState.FUN_HANDLE_RESULT 0 1 0 0 1 
+funState.FUN_GET_TA2 1 0 0 0 1 
+
+State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_main:main|flowState
+Name flowState.FLOW_MEM_FUNCTION flowState.FLOW_ROM_FUNCTION flowState.FLOW_AFTER_PROGRAMED flowState.FLOW_IDLE 
+flowState.FLOW_IDLE 0 0 0 0 
+flowState.FLOW_AFTER_PROGRAMED 0 0 1 1 
+flowState.FLOW_ROM_FUNCTION 0 1 0 1 
+flowState.FLOW_MEM_FUNCTION 1 0 0 1 
+
+State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdState
+Name cmdState.101 cmdState.100 cmdState.011 cmdState.010 cmdState.001 cmdState.000 
+cmdState.000 0 0 0 0 0 0 
+cmdState.001 0 0 0 0 1 1 
+cmdState.010 0 0 0 1 0 1 
+cmdState.011 0 0 1 0 0 1 
+cmdState.100 0 1 0 0 0 1 
+cmdState.101 1 0 0 0 0 1 
+
+State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState
+Name cmdState.0111 cmdState.0110 cmdState.0101 cmdState.0100 cmdState.0011 cmdState.0010 cmdState.0001 cmdState.0000 cmdState.1000 
+cmdState.0000 0 0 0 0 0 0 0 0 0 
+cmdState.0001 0 0 0 0 0 0 1 1 0 
+cmdState.0010 0 0 0 0 0 1 0 1 0 
+cmdState.0011 0 0 0 0 1 0 0 1 0 
+cmdState.0100 0 0 0 1 0 0 0 1 0 
+cmdState.0101 0 0 1 0 0 0 0 1 0 
+cmdState.0110 0 1 0 0 0 0 0 1 0 
+cmdState.0111 1 0 0 0 0 0 0 1 0 
+cmdState.1000 0 0 0 0 0 0 0 1 1 
+
+State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState
+Name cmdState.1110 cmdState.1101 cmdState.1100 cmdState.1011 cmdState.0011 cmdState.0010 cmdState.0001 cmdState.0000 
+cmdState.0000 0 0 0 0 0 0 0 0 
+cmdState.0001 0 0 0 0 0 0 1 1 
+cmdState.0010 0 0 0 0 0 1 0 1 
+cmdState.0011 0 0 0 0 1 0 0 1 
+cmdState.1011 0 0 0 1 0 0 0 1 
+cmdState.1100 0 0 1 0 0 0 0 1 
+cmdState.1101 0 1 0 0 0 0 0 1 
+cmdState.1110 1 0 0 0 0 0 0 1 
+
+State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|bitState
+Name bitState.0000 bitState.1000 bitState.0100 bitState.0010 bitState.0001 
+bitState.0000 0 0 0 0 0 
+bitState.0001 1 0 0 0 1 
+bitState.0010 1 0 0 1 0 
+bitState.0100 1 0 1 0 0 
+bitState.1000 1 1 0 0 0 

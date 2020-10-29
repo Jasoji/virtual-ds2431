@@ -1,0 +1,48 @@
+Quartus II Archive log --	E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/project.qarlog
+
+Archive:	E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/project.qar
+Date:		Thu Sep 17 23:19:42 2020
+Quartus II 64-Bit		15.0.0 Build 145 04/22/2015 SJ Full Version
+
+	=========== Files Selected: ===========
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/ip/fifo.qip
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/ip/fifo.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/ip/fifo_bb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/project.qpf
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_IO.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_MEM_CopyScratchpad.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_MEM_ReadMemory.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_MEM_ReadMemory_forTB.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_MEM_ReadScratchpad.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_MEM_WriteScratchpad.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_MEM_WriteScratchpad_forTB.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_ROM_ReadRom.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_main.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/VirtualDS2431_memory.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/crc16.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/debug.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/negPulse.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/posPulse.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/top.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/uart.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/rtl/virtualDS2431_ROM_MatchRom.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/VirtualDS2431_IO_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/VirtualDS2431_MEM_CopyScratchpad_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/VirtualDS2431_MEM_ReadMemory_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/VirtualDS2431_MEM_ReadScratchpad_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/VirtualDS2431_MEM_WriteScratchpad_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/VirtualDS2431_ROM_ReadRom_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/VirtualDS2431_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/crc16_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/debug_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/fifo_bb_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/negPulse_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/posPulse_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/testbench/virtualDS2431_ROM_MatchRom_tb.v
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/top.qsf
+E:/Sync2/by-health/program/raspi_ds2413/altera/virtualDs2431_13.0OK/top_assignment_defaults.qdf
+	======= Total: 37 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

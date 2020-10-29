@@ -1,0 +1,1046 @@
+Analysis & Synthesis report for top
+Tue Sep 22 10:16:57 2020
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. State Machine - |top|VirtualDS2431:vds1|debug:memoryMonitor|printState
+ 10. State Machine - |top|VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState
+ 11. State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_main:main|funState
+ 12. State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_main:main|flowState
+ 13. State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdState
+ 14. State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState
+ 15. State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState
+ 16. State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|bitState
+ 17. Registers Removed During Synthesis
+ 18. Removed Registers Triggering Further Register Optimizations
+ 19. General Register Statistics
+ 20. Inverted Register Statistics
+ 21. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 22. Source assignments for VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1
+ 23. Parameter Settings for User Entity Instance: VirtualDS2431:vds1|VirtualDS2431_main:main
+ 24. Parameter Settings for User Entity Instance: VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component
+ 25. scfifo Parameter Settings by Entity Instance
+ 26. Port Connectivity Checks: "VirtualDS2431:vds1|debug:memoryMonitor|uart:u"
+ 27. Port Connectivity Checks: "VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad"
+ 28. Port Connectivity Checks: "VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Sep 22 10:16:57 2020       ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
+; Revision Name                      ; top                                         ;
+; Top-level Entity Name              ; top                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 4,832                                       ;
+;     Total combinational functions  ; 4,425                                       ;
+;     Dedicated logic registers      ; 1,654                                       ;
+; Total registers                    ; 1654                                        ;
+; Total pins                         ; 9                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 131,072                                     ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE10F17C8       ;                    ;
+; Top-level entity name                                                      ; top                ; top                ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   2.6%      ;
+;     Processors 3-8         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                          ;
++-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                               ; Library ;
++-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; rtl/top.v                               ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/top.v                               ;         ;
+; rtl/debug.v                             ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/debug.v                             ;         ;
+; rtl/crc16.v                             ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/crc16.v                             ;         ;
+; rtl/negPulse.v                          ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/negPulse.v                          ;         ;
+; rtl/posPulse.v                          ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/posPulse.v                          ;         ;
+; rtl/uart.v                              ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/uart.v                              ;         ;
+; rtl/VirtualDS2431.v                     ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431.v                     ;         ;
+; rtl/VirtualDS2431_IO.v                  ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_IO.v                  ;         ;
+; rtl/VirtualDS2431_main.v                ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_main.v                ;         ;
+; rtl/VirtualDS2431_memory.v              ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_memory.v              ;         ;
+; rtl/VirtualDS2431_MEM_CopyScratchpad.v  ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_CopyScratchpad.v  ;         ;
+; rtl/VirtualDS2431_MEM_ReadMemory.v      ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadMemory.v      ;         ;
+; rtl/VirtualDS2431_MEM_ReadScratchpad.v  ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_ReadScratchpad.v  ;         ;
+; rtl/VirtualDS2431_MEM_WriteScratchpad.v ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_MEM_WriteScratchpad.v ;         ;
+; rtl/virtualDS2431_ROM_MatchRom.v        ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/virtualDS2431_ROM_MatchRom.v        ;         ;
+; rtl/VirtualDS2431_ROM_ReadRom.v         ; yes             ; User Verilog HDL File        ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/rtl/VirtualDS2431_ROM_ReadRom.v         ;         ;
+; ip/fifo.v                               ; yes             ; User Wizard-Generated File   ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/ip/fifo.v                               ;         ;
+; scfifo.tdf                              ; yes             ; Megafunction                 ; c:/altera/15.0/quartus/libraries/megafunctions/scfifo.tdf                                                                                                                  ;         ;
+; a_regfifo.inc                           ; yes             ; Megafunction                 ; c:/altera/15.0/quartus/libraries/megafunctions/a_regfifo.inc                                                                                                               ;         ;
+; a_dpfifo.inc                            ; yes             ; Megafunction                 ; c:/altera/15.0/quartus/libraries/megafunctions/a_dpfifo.inc                                                                                                                ;         ;
+; a_i2fifo.inc                            ; yes             ; Megafunction                 ; c:/altera/15.0/quartus/libraries/megafunctions/a_i2fifo.inc                                                                                                                ;         ;
+; a_fffifo.inc                            ; yes             ; Megafunction                 ; c:/altera/15.0/quartus/libraries/megafunctions/a_fffifo.inc                                                                                                                ;         ;
+; a_f2fifo.inc                            ; yes             ; Megafunction                 ; c:/altera/15.0/quartus/libraries/megafunctions/a_f2fifo.inc                                                                                                                ;         ;
+; aglobal150.inc                          ; yes             ; Megafunction                 ; c:/altera/15.0/quartus/libraries/megafunctions/aglobal150.inc                                                                                                              ;         ;
+; db/scfifo_s831.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/scfifo_s831.tdf                      ;         ;
+; db/a_dpfifo_f031.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/a_dpfifo_f031.tdf                    ;         ;
+; db/a_fefifo_nce.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/a_fefifo_nce.tdf                     ;         ;
+; db/cntr_sp7.tdf                         ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/cntr_sp7.tdf                         ;         ;
+; db/dpram_h811.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/dpram_h811.tdf                       ;         ;
+; db/altsyncram_k3k1.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/altsyncram_k3k1.tdf                  ;         ;
+; db/decode_a87.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/decode_a87.tdf                       ;         ;
+; db/mux_q28.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/mux_q28.tdf                          ;         ;
+; db/cntr_gpb.tdf                         ; yes             ; Auto-Generated Megafunction  ; C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/db/cntr_gpb.tdf                         ;         ;
++-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 4,832      ;
+;                                             ;            ;
+; Total combinational functions               ; 4425       ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 3080       ;
+;     -- 3 input functions                    ; 283        ;
+;     -- <=2 input functions                  ; 1062       ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 4324       ;
+;     -- arithmetic mode                      ; 101        ;
+;                                             ;            ;
+; Total registers                             ; 1654       ;
+;     -- Dedicated logic registers            ; 1654       ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 9          ;
+; Total memory bits                           ; 131072     ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; nRst~input ;
+; Maximum fan-out                             ; 1389       ;
+; Total fan-out                               ; 21590      ;
+; Average fan-out                             ; 3.53       ;
++---------------------------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                 ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                          ; Library Name ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |top                                                      ; 4425 (1)          ; 1654 (0)     ; 131072      ; 0            ; 0       ; 0         ; 9    ; 0            ; |top                                                                                                                                                                                         ; work         ;
+;    |VirtualDS2431:vds1|                                   ; 4424 (2)          ; 1654 (0)     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1                                                                                                                                                                      ; work         ;
+;       |VirtualDS2431_IO:dsio|                             ; 150 (143)         ; 58 (49)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio                                                                                                                                                ; work         ;
+;          |negPulse:io2|                                   ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|negPulse:io2                                                                                                                                   ; work         ;
+;          |negPulse:nBusRst1|                              ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|negPulse:nBusRst1                                                                                                                              ; work         ;
+;          |negPulse:nODBusRst1|                            ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|negPulse:nODBusRst1                                                                                                                            ; work         ;
+;          |posPulse:io1|                                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1                                                                                                                                   ; work         ;
+;          |posPulse:trig1|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:trig1                                                                                                                                 ; work         ;
+;       |VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|   ; 48 (46)           ; 37 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad                                                                                                                      ; work         ;
+;          |posPulse:ByteTransDone1|                        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1                                                                                              ; work         ;
+;          |posPulse:cmdRunTrig1|                           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:cmdRunTrig1                                                                                                 ; work         ;
+;       |VirtualDS2431_MEM_ReadMemory:readMemory|           ; 757 (755)         ; 23 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory                                                                                                                              ; work         ;
+;          |posPulse:cmdRunTrig1|                           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|posPulse:cmdRunTrig1                                                                                                         ; work         ;
+;          |posPulse:ioTrig1|                               ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|posPulse:ioTrig1                                                                                                             ; work         ;
+;       |VirtualDS2431_MEM_ReadScratchpad:readScratchpad|   ; 225 (186)         ; 81 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad                                                                                                                      ; work         ;
+;          |crc16:u1|                                       ; 35 (34)           ; 39 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|crc16:u1                                                                                                             ; work         ;
+;             |posPulse:trig1|                              ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|crc16:u1|posPulse:trig1                                                                                              ; work         ;
+;          |posPulse:cmdRunTrig1|                           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|posPulse:cmdRunTrig1                                                                                                 ; work         ;
+;          |posPulse:crcDone1|                              ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|posPulse:crcDone1                                                                                                    ; work         ;
+;          |posPulse:ioTrig1|                               ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|posPulse:ioTrig1                                                                                                     ; work         ;
+;       |VirtualDS2431_MEM_WriteScratchpad:writeScratchpad| ; 286 (246)         ; 144 (97)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad                                                                                                                    ; work         ;
+;          |crc16:u1|                                       ; 35 (34)           ; 39 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|crc16:u1                                                                                                           ; work         ;
+;             |posPulse:trig1|                              ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|crc16:u1|posPulse:trig1                                                                                            ; work         ;
+;          |posPulse:cmdRunTrig1|                           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|posPulse:cmdRunTrig1                                                                                               ; work         ;
+;          |posPulse:crcDone1|                              ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|posPulse:crcDone1                                                                                                  ; work         ;
+;          |posPulse:endCmd1|                               ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|posPulse:endCmd1                                                                                                   ; work         ;
+;          |posPulse:ioTrig1|                               ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|posPulse:ioTrig1                                                                                                   ; work         ;
+;       |VirtualDS2431_ROM_ReadRom:readRom|                 ; 30 (28)           ; 19 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom                                                                                                                                    ; work         ;
+;          |posPulse:cmdRunTrig1|                           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|posPulse:cmdRunTrig1                                                                                                               ; work         ;
+;          |posPulse:ioTrig1|                               ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|posPulse:ioTrig1                                                                                                                   ; work         ;
+;       |VirtualDS2431_main:main|                           ; 494 (484)         ; 68 (49)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main                                                                                                                                              ; work         ;
+;          |posPulse:done10|                                ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done10                                                                                                                              ; work         ;
+;          |posPulse:done1|                                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1                                                                                                                               ; work         ;
+;          |posPulse:done2|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done2                                                                                                                               ; work         ;
+;          |posPulse:done3|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done3                                                                                                                               ; work         ;
+;          |posPulse:done4|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done4                                                                                                                               ; work         ;
+;          |posPulse:done5|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done5                                                                                                                               ; work         ;
+;          |posPulse:done6|                                 ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done6                                                                                                                               ; work         ;
+;          |posPulse:done7|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done7                                                                                                                               ; work         ;
+;          |posPulse:done8|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done8                                                                                                                               ; work         ;
+;          |posPulse:done9|                                 ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done9                                                                                                                               ; work         ;
+;       |VirtualDS2431_memory:memory|                       ; 1484 (1484)       ; 1088 (1088)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|VirtualDS2431_memory:memory                                                                                                                                          ; work         ;
+;       |debug:memoryMonitor|                               ; 919 (792)         ; 117 (30)     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor                                                                                                                                                  ; work         ;
+;          |fifo:a|                                         ; 82 (0)            ; 45 (0)       ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a                                                                                                                                           ; work         ;
+;             |scfifo:scfifo_component|                     ; 82 (0)            ; 45 (0)       ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component                                                                                                                   ; work         ;
+;                |scfifo_s831:auto_generated|               ; 82 (0)            ; 45 (0)       ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated                                                                                        ; work         ;
+;                   |a_dpfifo_f031:dpfifo|                  ; 82 (16)           ; 45 (0)       ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo                                                                   ; work         ;
+;                      |a_fefifo_nce:fifo_state|            ; 27 (12)           ; 16 (2)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|a_fefifo_nce:fifo_state                                           ; work         ;
+;                         |cntr_sp7:count_usedw|            ; 15 (15)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|a_fefifo_nce:fifo_state|cntr_sp7:count_usedw                      ; work         ;
+;                      |cntr_gpb:rd_ptr_count|              ; 14 (14)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|cntr_gpb:rd_ptr_count                                             ; work         ;
+;                      |cntr_gpb:wr_ptr|                    ; 15 (15)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|cntr_gpb:wr_ptr                                                   ; work         ;
+;                      |dpram_h811:FIFOram|                 ; 10 (0)            ; 1 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram                                                ; work         ;
+;                         |altsyncram_k3k1:altsyncram1|     ; 10 (0)            ; 1 (1)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1                    ; work         ;
+;                            |decode_a87:decode3|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1|decode_a87:decode3 ; work         ;
+;                            |mux_q28:mux4|                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1|mux_q28:mux4       ; work         ;
+;          |posPulse:memoryUpdated1|                        ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|posPulse:memoryUpdated1                                                                                                                          ; work         ;
+;          |posPulse:uartDone1|                             ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|posPulse:uartDone1                                                                                                                               ; work         ;
+;          |uart:u|                                         ; 42 (41)           ; 38 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|uart:u                                                                                                                                           ; work         ;
+;             |posPulse:txTrig1|                            ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|debug:memoryMonitor|uart:u|posPulse:txTrig1                                                                                                                          ; work         ;
+;       |virtualDS2431_ROM_MatchRom:mathcRom|               ; 29 (27)           ; 19 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom                                                                                                                                  ; work         ;
+;          |posPulse:cmdRunTrig1|                           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|posPulse:cmdRunTrig1                                                                                                             ; work         ;
+;          |posPulse:ioTrig1|                               ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|posPulse:ioTrig1                                                                                                                 ; work         ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                      ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; Name                                                                                                                                                                            ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF  ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16384        ; 8            ; 16384        ; 8            ; 131072 ; None ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|debug:memoryMonitor|printState        ;
++---------------+---------------+---------------+---------------+---------------+
+; Name          ; printState.11 ; printState.10 ; printState.01 ; printState.00 ;
++---------------+---------------+---------------+---------------+---------------+
+; printState.00 ; 0             ; 0             ; 0             ; 0             ;
+; printState.01 ; 0             ; 0             ; 1             ; 1             ;
+; printState.10 ; 0             ; 1             ; 0             ; 1             ;
+; printState.11 ; 1             ; 0             ; 0             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState                                                                                                        ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name         ; txState.1010 ; txState.1001 ; txState.1000 ; txState.0111 ; txState.0110 ; txState.0101 ; txState.0100 ; txState.0011 ; txState.0010 ; txState.0001 ; txState.0000 ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; txState.0000 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; txState.0001 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; txState.0010 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; txState.0011 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; txState.0100 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; txState.0101 ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; txState.0110 ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; txState.0111 ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; txState.1000 ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; txState.1001 ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; txState.1010 ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_main:main|funState                                                                                          ;
++--------------------------------+----------------------+----------------------------+----------------------+--------------------------------+----------------------+
+; Name                           ; funState.FUN_GET_TA2 ; funState.FUN_HANDLE_RESULT ; funState.FUN_GET_TA1 ; funState.FUN_WAIT_FOR_CMD_DONE ; funState.FUN_GET_CMD ;
++--------------------------------+----------------------+----------------------------+----------------------+--------------------------------+----------------------+
+; funState.FUN_GET_CMD           ; 0                    ; 0                          ; 0                    ; 0                              ; 0                    ;
+; funState.FUN_WAIT_FOR_CMD_DONE ; 0                    ; 0                          ; 0                    ; 1                              ; 1                    ;
+; funState.FUN_GET_TA1           ; 0                    ; 0                          ; 1                    ; 0                              ; 1                    ;
+; funState.FUN_HANDLE_RESULT     ; 0                    ; 1                          ; 0                    ; 0                              ; 1                    ;
+; funState.FUN_GET_TA2           ; 1                    ; 0                          ; 0                    ; 0                              ; 1                    ;
++--------------------------------+----------------------+----------------------------+----------------------+--------------------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_main:main|flowState                                                                         ;
++--------------------------------+-----------------------------+-----------------------------+--------------------------------+---------------------+
+; Name                           ; flowState.FLOW_MEM_FUNCTION ; flowState.FLOW_ROM_FUNCTION ; flowState.FLOW_AFTER_PROGRAMED ; flowState.FLOW_IDLE ;
++--------------------------------+-----------------------------+-----------------------------+--------------------------------+---------------------+
+; flowState.FLOW_IDLE            ; 0                           ; 0                           ; 0                              ; 0                   ;
+; flowState.FLOW_AFTER_PROGRAMED ; 0                           ; 0                           ; 1                              ; 1                   ;
+; flowState.FLOW_ROM_FUNCTION    ; 0                           ; 1                           ; 0                              ; 1                   ;
+; flowState.FLOW_MEM_FUNCTION    ; 1                           ; 0                           ; 0                              ; 1                   ;
++--------------------------------+-----------------------------+-----------------------------+--------------------------------+---------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdState       ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name         ; cmdState.101 ; cmdState.100 ; cmdState.011 ; cmdState.010 ; cmdState.001 ; cmdState.000 ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; cmdState.000 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; cmdState.001 ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; cmdState.010 ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; cmdState.011 ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; cmdState.100 ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; cmdState.101 ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState                                                              ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; Name          ; cmdState.0111 ; cmdState.0110 ; cmdState.0101 ; cmdState.0100 ; cmdState.0011 ; cmdState.0010 ; cmdState.0001 ; cmdState.0000 ; cmdState.1000 ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; cmdState.0000 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; cmdState.0001 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ; 0             ;
+; cmdState.0010 ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ; 0             ;
+; cmdState.0011 ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ; 0             ;
+; cmdState.0100 ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ; 0             ;
+; cmdState.0101 ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ;
+; cmdState.0110 ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ;
+; cmdState.0111 ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ;
+; cmdState.1000 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState                                            ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; Name          ; cmdState.1110 ; cmdState.1101 ; cmdState.1100 ; cmdState.1011 ; cmdState.0011 ; cmdState.0010 ; cmdState.0001 ; cmdState.0000 ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; cmdState.0000 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; cmdState.0001 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
+; cmdState.0010 ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
+; cmdState.0011 ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
+; cmdState.1011 ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
+; cmdState.1100 ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; cmdState.1101 ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; cmdState.1110 ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------+
+; State Machine - |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|bitState                        ;
++---------------+---------------+---------------+---------------+---------------+---------------+
+; Name          ; bitState.0000 ; bitState.1000 ; bitState.0100 ; bitState.0010 ; bitState.0001 ;
++---------------+---------------+---------------+---------------+---------------+---------------+
+; bitState.0000 ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; bitState.0001 ; 1             ; 0             ; 0             ; 0             ; 1             ;
+; bitState.0010 ; 1             ; 0             ; 0             ; 1             ; 0             ;
+; bitState.0100 ; 1             ; 0             ; 1             ; 0             ; 0             ;
+; bitState.1000 ; 1             ; 1             ; 0             ; 0             ; 0             ;
++---------------+---------------+---------------+---------------+---------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                            ;
++----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+; Register name                                                                                      ; Reason for Removal                                                                                       ;
++----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+; VirtualDS2431:vds1|debug:memoryMonitor|index[0,1]                                                  ; Stuck at GND due to stuck port data_in                                                                   ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|i[0..2]                         ; Stuck at GND due to stuck port data_in                                                                   ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|i[0..2]                                       ; Stuck at GND due to stuck port data_in                                                                   ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|memoryPoint[0..2]                       ; Stuck at GND due to stuck port data_in                                                                   ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|posPulse:ByteTransDone1|lastI                 ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1|lastI                              ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|posPulse:ByteTransDone1|lastI               ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1|lastI                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|posPulse:ByteTransDone1|lastI           ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1|lastI                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|posPulse:ByteTransDone1|lastI ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1|lastI                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|posPulse:ByteTransDone1|lastI   ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1|lastI                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1|lastI   ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1|lastI                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdRun                          ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|crcnRst                   ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdRun                        ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|crcnRst                 ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|i[0,1]                                      ; Merged with VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|i[2]                                  ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|posPulse:ByteTransDone1|q               ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1|q ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|posPulse:ByteTransDone1|q       ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1|q ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|posPulse:ByteTransDone1|q     ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1|q ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|posPulse:ByteTransDone1|q                     ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1|q ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|posPulse:done1|q                                        ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1|q ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|posPulse:ByteTransDone1|q                   ; Merged with VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|posPulse:ByteTransDone1|q ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|sentDat_this[3,5,7]                                     ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|sentDat_this[1]                                   ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|sentDat_this[2,4,6]                                     ; Merged with VirtualDS2431:vds1|VirtualDS2431_main:main|sentDat_this[0]                                   ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|i[6]                                        ; Merged with VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|cmdState[3]                           ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|i[5]                                        ; Merged with VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|cmdState[2]                           ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|i[4]                                        ; Merged with VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|cmdState[1]                           ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|i[3]                                        ; Merged with VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|cmdState[0]                           ;
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|lastI                                        ; Merged with VirtualDS2431:vds1|VirtualDS2431_IO:dsio|negPulse:io2|lastI                                  ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|i[6]                                          ; Merged with VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|cmdState[3]                             ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|i[5]                                          ; Merged with VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|cmdState[2]                             ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|i[4]                                          ; Merged with VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|cmdState[1]                             ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|i[3]                                          ; Merged with VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|cmdState[0]                             ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|i[2]                                        ; Stuck at GND due to stuck port data_in                                                                   ;
+; VirtualDS2431:vds1|debug:memoryMonitor|datIn[7]                                                    ; Stuck at GND due to stuck port data_in                                                                   ;
+; VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|compareTemp[1]                              ; Stuck at GND due to stuck port data_in                                                                   ;
+; VirtualDS2431:vds1|debug:memoryMonitor|printState~4                                                ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|debug:memoryMonitor|printState~5                                                ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState~5                                            ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState~6                                            ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState~7                                            ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState~8                                            ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|funState~9                                              ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|funState~10                                             ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|funState~11                                             ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdState~6                      ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdState~7                      ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdState~8                      ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState~2                      ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState~3                      ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState~4                      ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState~12                   ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState~13                   ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState~14                   ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState~15                   ; Lost fanout                                                                                              ;
+; VirtualDS2431:vds1|debug:memoryMonitor|printState.10                                               ; Lost fanout                                                                                              ;
+; Total Number of Removed Registers = 65                                                             ;                                                                                                          ;
++----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                            ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------+
+; Register name                                       ; Reason for Removal        ; Registers Removed due to This Register               ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------+
+; VirtualDS2431:vds1|debug:memoryMonitor|index[1]     ; Stuck at GND              ; VirtualDS2431:vds1|debug:memoryMonitor|datIn[7]      ;
+;                                                     ; due to stuck port data_in ;                                                      ;
+; VirtualDS2431:vds1|debug:memoryMonitor|printState~5 ; Lost Fanouts              ; VirtualDS2431:vds1|debug:memoryMonitor|printState.10 ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1654  ;
+; Number of registers using Synchronous Clear  ; 136   ;
+; Number of registers using Synchronous Load   ; 93    ;
+; Number of registers using Asynchronous Clear ; 1525  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1474  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                              ;
++---------------------------------------------------------------------------------+---------+
+; Inverted Register                                                               ; Fan out ;
++---------------------------------------------------------------------------------+---------+
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|IO_o                                   ; 8       ;
+; VirtualDS2431:vds1|debug:memoryMonitor|uart:u|io_tx                             ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|nODBusRst                              ; 14      ;
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|nBusRst                                ; 13      ;
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|byteState[3]                           ; 8       ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|sentDat_this[0]                      ; 23      ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[2]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[2]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[2] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[2]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|byteState[1]                           ; 14      ;
+; VirtualDS2431:vds1|VirtualDS2431_main:main|sentDat_this[1]                      ; 20      ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[1]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[1]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[1] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[1]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|byteState[0]                           ; 14      ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[0]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[0]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[0] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[0]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[3]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[3]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[3] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[3]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[6]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[6]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[6] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[6]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[5]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[5]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[5] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[5]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[4]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[4]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[4] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[4]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|sentDat[7]                 ; 2       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[7]           ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[7] ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[7]   ; 1       ;
+; VirtualDS2431:vds1|VirtualDS2431_IO:dsio|byteState[2]                           ; 11      ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[882]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[618]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[570]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[554]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[634]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[610]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[562]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[546]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[626]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[810]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[890]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[714]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[722]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[706]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[730]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[658]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[650]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[642]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[666]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[970]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[978]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[986]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[586]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[594]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[578]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[602]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[786]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[778]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[770]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[794]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[530]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[522]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[514]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[538]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[938]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[946]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[954]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[746]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[754]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[738]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[762]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[682]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[690]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[674]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[698]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[1010]                     ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[994]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|optionBytes[42]                  ; 5       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[226]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[114]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[98]                       ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[242]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[466]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[194]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[82]                       ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[66]                       ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[210]                      ; 3       ;
+; VirtualDS2431:vds1|VirtualDS2431_memory:memory|memory[482]                      ; 3       ;
+; Total number of inverted registers = 819*                                       ;         ;
++---------------------------------------------------------------------------------+---------+
+* Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|debug:memoryMonitor|datIn[6]                                          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|done                                            ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom|cmdState[2]                         ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|debug:memoryMonitor|column[3]                                         ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|memoryPoint[6]                ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|fromMaster_TA1[4]     ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|fromMaster_TA2[1]     ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|fromMaster_ES[3]      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|i[6]                  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|byteCounter[2]        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|cmdDone                           ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom|cmdState[1]                       ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|ES[2]               ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 18 LEs               ; 27 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|debug:memoryMonitor|index[4]                                          ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdFailed             ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|crcDat[0]             ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|crcDat[1]           ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[25]      ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[44]      ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[33]      ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[2]       ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[60]      ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[48]      ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[22]      ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 24 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|Scratchpad[14]      ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 2 LEs                ; 16 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|funTrig_readRom                               ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 16 LEs               ; 64 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|funCmd[7]                                     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|crc16:u1|runStep[3]   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|crc16:u1|runStep[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|nODBusRst                                       ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_IO:dsio|byteState[2]                                    ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 16 LEs               ; 40 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|sentDat[7]          ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|sentDat[7]            ;
+; 145:1              ; 4 bits    ; 384 LEs       ; 372 LEs              ; 12 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[5]                    ;
+; 145:1              ; 4 bits    ; 384 LEs       ; 368 LEs              ; 16 LEs                 ; Yes        ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory|sentDat[4]                    ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|sentDat_this                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|ShiftLeft0          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|funTrig_copyScratchpad                        ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |top|VirtualDS2431:vds1|debug:memoryMonitor|uart:u|txState                                    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad|cmdState              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState.0110         ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|cmdState            ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|cmdState.0010         ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top|VirtualDS2431:vds1|debug:memoryMonitor|printState                                        ;
+; 32:1               ; 56 bits   ; 1176 LEs      ; 784 LEs              ; 392 LEs                ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_memory:memory|Mux12                                     ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad|ShiftRight0           ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 96 LEs               ; 8 LEs                  ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_memory:memory|Mux63                                     ;
+; 532:1              ; 2 bits    ; 708 LEs       ; 12 LEs               ; 696 LEs                ; No         ; |top|VirtualDS2431:vds1|VirtualDS2431_main:main|funState                                      ;
+; 276:1              ; 4 bits    ; 736 LEs       ; 728 LEs              ; 8 LEs                  ; No         ; |top|VirtualDS2431:vds1|debug:memoryMonitor|ShiftRight0                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1 ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                                                            ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                                             ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VirtualDS2431:vds1|VirtualDS2431_main:main ;
++-----------------------+-------+---------------------------------------------------------+
+; Parameter Name        ; Value ; Type                                                    ;
++-----------------------+-------+---------------------------------------------------------+
+; FLOW_IDLE             ; 0001  ; Unsigned Binary                                         ;
+; FLOW_AFTER_PROGRAMED  ; 0010  ; Unsigned Binary                                         ;
+; FLOW_ROM_FUNCTION     ; 0100  ; Unsigned Binary                                         ;
+; FLOW_MEM_FUNCTION     ; 1000  ; Unsigned Binary                                         ;
+; FUN_GET_CMD           ; 001   ; Unsigned Binary                                         ;
+; FUN_GET_TA1           ; 011   ; Unsigned Binary                                         ;
+; FUN_GET_TA2           ; 111   ; Unsigned Binary                                         ;
+; FUN_WAIT_FOR_CMD_DONE ; 010   ; Unsigned Binary                                         ;
+; FUN_HANDLE_RESULT     ; 100   ; Unsigned Binary                                         ;
++-----------------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component ;
++-------------------------+--------------+---------------------------------------------------------------------------+
+; Parameter Name          ; Value        ; Type                                                                      ;
++-------------------------+--------------+---------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS       ; ON           ; AUTO_CARRY                                                                ;
+; IGNORE_CARRY_BUFFERS    ; OFF          ; IGNORE_CARRY                                                              ;
+; AUTO_CASCADE_CHAINS     ; ON           ; AUTO_CASCADE                                                              ;
+; IGNORE_CASCADE_BUFFERS  ; OFF          ; IGNORE_CASCADE                                                            ;
+; lpm_width               ; 8            ; Signed Integer                                                            ;
+; LPM_NUMWORDS            ; 16384        ; Signed Integer                                                            ;
+; LPM_WIDTHU              ; 14           ; Signed Integer                                                            ;
+; LPM_SHOWAHEAD           ; OFF          ; Untyped                                                                   ;
+; UNDERFLOW_CHECKING      ; ON           ; Untyped                                                                   ;
+; OVERFLOW_CHECKING       ; ON           ; Untyped                                                                   ;
+; ALLOW_RWCYCLE_WHEN_FULL ; OFF          ; Untyped                                                                   ;
+; ADD_RAM_OUTPUT_REGISTER ; OFF          ; Untyped                                                                   ;
+; ALMOST_FULL_VALUE       ; 0            ; Untyped                                                                   ;
+; ALMOST_EMPTY_VALUE      ; 0            ; Untyped                                                                   ;
+; USE_EAB                 ; ON           ; Untyped                                                                   ;
+; MAXIMIZE_SPEED          ; 5            ; Untyped                                                                   ;
+; DEVICE_FAMILY           ; Cyclone IV E ; Untyped                                                                   ;
+; OPTIMIZE_FOR_SPEED      ; 5            ; Untyped                                                                   ;
+; CBXI_PARAMETER          ; scfifo_s831  ; Untyped                                                                   ;
++-------------------------+--------------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; scfifo Parameter Settings by Entity Instance                                                       ;
++----------------------------+-----------------------------------------------------------------------+
+; Name                       ; Value                                                                 ;
++----------------------------+-----------------------------------------------------------------------+
+; Number of entity instances ; 1                                                                     ;
+; Entity Instance            ; VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component ;
+;     -- FIFO Type           ; Single Clock                                                          ;
+;     -- lpm_width           ; 8                                                                     ;
+;     -- LPM_NUMWORDS        ; 16384                                                                 ;
+;     -- LPM_SHOWAHEAD       ; OFF                                                                   ;
+;     -- USE_EAB             ; ON                                                                    ;
++----------------------------+-----------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "VirtualDS2431:vds1|debug:memoryMonitor|uart:u" ;
++----------------+-------+----------+---------------------------------------+
+; Port           ; Type  ; Severity ; Details                               ;
++----------------+-------+----------+---------------------------------------+
+; baudRate[1..0] ; Input ; Info     ; Stuck at GND                          ;
+; baudRate[2]    ; Input ; Info     ; Stuck at VCC                          ;
++----------------+-------+----------+---------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad" ;
++----------+-------+----------+------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                          ;
++----------+-------+----------+------------------------------------------------------------------+
+; ES[4..3] ; Input ; Info     ; Stuck at GND                                                     ;
+; ES[6]    ; Input ; Info     ; Stuck at GND                                                     ;
++----------+-------+----------+------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad" ;
++----------+-------+----------+------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                          ;
++----------+-------+----------+------------------------------------------------------------------+
+; ES[4..3] ; Input ; Info     ; Stuck at GND                                                     ;
+; ES[6]    ; Input ; Info     ; Stuck at GND                                                     ;
++----------+-------+----------+------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 9                           ;
+; cycloneiii_ff         ; 1654                        ;
+;     CLR               ; 74                          ;
+;     CLR SCLR          ; 26                          ;
+;     CLR SCLR SLD      ; 5                           ;
+;     CLR SLD           ; 5                           ;
+;     ENA               ; 10                          ;
+;     ENA CLR           ; 1305                        ;
+;     ENA CLR SCLR      ; 69                          ;
+;     ENA CLR SCLR SLD  ; 28                          ;
+;     ENA CLR SLD       ; 13                          ;
+;     ENA SCLR          ; 7                           ;
+;     ENA SLD           ; 42                          ;
+;     SCLR              ; 1                           ;
+;     plain             ; 69                          ;
+; cycloneiii_lcell_comb ; 4427                        ;
+;     arith             ; 101                         ;
+;         2 data inputs ; 84                          ;
+;         3 data inputs ; 17                          ;
+;     normal            ; 4326                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 818                         ;
+;         2 data inputs ; 161                         ;
+;         3 data inputs ; 266                         ;
+;         4 data inputs ; 3080                        ;
+; cycloneiii_ram_block  ; 16                          ;
+;                       ;                             ;
+; Max LUT depth         ; 11.00                       ;
+; Average LUT depth     ; 5.81                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:23     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+    Info: Processing started: Tue Sep 22 10:16:17 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c top
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/top_tb.v
+    Info (12023): Found entity 1: top_tb
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/pospulse_io.v
+    Info (12023): Found entity 1: posPulse_io
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/negpulse_io.v
+    Info (12023): Found entity 1: negPulse_io
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/top.v
+    Info (12023): Found entity 1: top
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/debug.v
+    Info (12023): Found entity 1: debug
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/crc16.v
+    Info (12023): Found entity 1: crc16
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/negpulse.v
+    Info (12023): Found entity 1: negPulse
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/pospulse.v
+    Info (12023): Found entity 1: posPulse
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/uart.v
+    Info (12023): Found entity 1: uart
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431.v
+    Info (12023): Found entity 1: VirtualDS2431
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_io.v
+    Info (12023): Found entity 1: VirtualDS2431_IO
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_main.v
+    Info (12023): Found entity 1: VirtualDS2431_main
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_memory.v
+    Info (12023): Found entity 1: VirtualDS2431_memory
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_mem_copyscratchpad.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_CopyScratchpad
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_mem_readmemory.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_ReadMemory
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_mem_readmemory_fortb.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_ReadMemory_forTB
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_mem_readscratchpad.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_ReadScratchpad
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_mem_writescratchpad.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_WriteScratchpad
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_mem_writescratchpad_fortb.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_WriteScratchpad_forTB
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_rom_matchrom.v
+    Info (12023): Found entity 1: virtualDS2431_ROM_MatchRom
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/virtualds2431_rom_readrom.v
+    Info (12023): Found entity 1: VirtualDS2431_ROM_ReadRom
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/crc16_tb.v
+    Info (12023): Found entity 1: crc16_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/negpulse_tb.v
+    Info (12023): Found entity 1: negPulse_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/pospulse_tb.v
+    Info (12023): Found entity 1: posPulse_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_tb.v
+    Info (12023): Found entity 1: VirtualDS2431_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_io_tb.v
+    Info (12023): Found entity 1: VirtualDS2431_IO_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_mem_copyscratchpad_tb.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_CopyScratchpad_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_mem_readmemory_tb.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_ReadMemory_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_mem_readscratchpad_tb.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_ReadScratchpad_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_mem_writescratchpad_tb.v
+    Info (12023): Found entity 1: VirtualDS2431_MEM_WriteScratchpad_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_rom_matchrom_tb.v
+    Info (12023): Found entity 1: virtualDS2431_ROM_MatchRom_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/virtualds2431_rom_readrom_tb.v
+    Info (12023): Found entity 1: VirtualDS2431_ROM_ReadRom_tb
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/fifo_bb_tb.v
+    Info (12023): Found entity 1: fifo_bb_tb
+Info (12021): Found 1 design units, including 1 entities, in source file ip/fifo.v
+    Info (12023): Found entity 1: fifo
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Warning (10034): Output port "IO_o1" at top.v(32) has no driver
+Info (12128): Elaborating entity "VirtualDS2431" for hierarchy "VirtualDS2431:vds1"
+Info (12128): Elaborating entity "VirtualDS2431_IO" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_IO:dsio"
+Info (10264): Verilog HDL Case Statement information at VirtualDS2431_IO.v(201): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at VirtualDS2431_IO.v(239): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at VirtualDS2431_IO.v(278): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "posPulse" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1"
+Info (12128): Elaborating entity "negPulse" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_IO:dsio|negPulse:io2"
+Info (12128): Elaborating entity "VirtualDS2431_memory" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_memory:memory"
+Info (12128): Elaborating entity "VirtualDS2431_ROM_ReadRom" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_ROM_ReadRom:readRom"
+Warning (10230): Verilog HDL assignment warning at VirtualDS2431_ROM_ReadRom.v(60): truncated value with size 64 to match size of target (8)
+Info (12128): Elaborating entity "virtualDS2431_ROM_MatchRom" for hierarchy "VirtualDS2431:vds1|virtualDS2431_ROM_MatchRom:mathcRom"
+Warning (10230): Verilog HDL assignment warning at virtualDS2431_ROM_MatchRom.v(60): truncated value with size 64 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at virtualDS2431_ROM_MatchRom.v(68): truncated value with size 64 to match size of target (8)
+Info (12128): Elaborating entity "VirtualDS2431_MEM_ReadMemory" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_MEM_ReadMemory:readMemory"
+Warning (10230): Verilog HDL assignment warning at VirtualDS2431_MEM_ReadMemory.v(75): truncated value with size 1152 to match size of target (8)
+Info (12128): Elaborating entity "VirtualDS2431_MEM_WriteScratchpad" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad"
+Warning (10230): Verilog HDL assignment warning at VirtualDS2431_MEM_WriteScratchpad.v(260): truncated value with size 64 to match size of target (8)
+Info (12128): Elaborating entity "crc16" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_MEM_WriteScratchpad:writeScratchpad|crc16:u1"
+Info (12128): Elaborating entity "VirtualDS2431_MEM_ReadScratchpad" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_MEM_ReadScratchpad:readScratchpad"
+Warning (10230): Verilog HDL assignment warning at VirtualDS2431_MEM_ReadScratchpad.v(156): truncated value with size 64 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at VirtualDS2431_MEM_ReadScratchpad.v(157): truncated value with size 64 to match size of target (8)
+Info (12128): Elaborating entity "VirtualDS2431_MEM_CopyScratchpad" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_MEM_CopyScratchpad:copyScratchpad"
+Info (12128): Elaborating entity "VirtualDS2431_main" for hierarchy "VirtualDS2431:vds1|VirtualDS2431_main:main"
+Info (10264): Verilog HDL Case Statement information at VirtualDS2431_main.v(265): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "debug" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor"
+Warning (10230): Verilog HDL assignment warning at debug.v(145): truncated value with size 1088 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at debug.v(146): truncated value with size 128 to match size of target (8)
+Info (12128): Elaborating entity "fifo" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a"
+Info (12128): Elaborating entity "scfifo" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component"
+Info (12130): Elaborated megafunction instantiation "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component"
+Info (12133): Instantiated megafunction "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component" with the following parameter:
+    Info (12134): Parameter "add_ram_output_register" = "OFF"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_numwords" = "16384"
+    Info (12134): Parameter "lpm_showahead" = "OFF"
+    Info (12134): Parameter "lpm_type" = "scfifo"
+    Info (12134): Parameter "lpm_width" = "8"
+    Info (12134): Parameter "lpm_widthu" = "14"
+    Info (12134): Parameter "overflow_checking" = "ON"
+    Info (12134): Parameter "underflow_checking" = "ON"
+    Info (12134): Parameter "use_eab" = "ON"
+Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_s831.tdf
+    Info (12023): Found entity 1: scfifo_s831
+Info (12128): Elaborating entity "scfifo_s831" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_f031.tdf
+    Info (12023): Found entity 1: a_dpfifo_f031
+Info (12128): Elaborating entity "a_dpfifo_f031" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_nce.tdf
+    Info (12023): Found entity 1: a_fefifo_nce
+Info (12128): Elaborating entity "a_fefifo_nce" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|a_fefifo_nce:fifo_state"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_sp7.tdf
+    Info (12023): Found entity 1: cntr_sp7
+Info (12128): Elaborating entity "cntr_sp7" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|a_fefifo_nce:fifo_state|cntr_sp7:count_usedw"
+Info (12021): Found 1 design units, including 1 entities, in source file db/dpram_h811.tdf
+    Info (12023): Found entity 1: dpram_h811
+Info (12128): Elaborating entity "dpram_h811" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_k3k1.tdf
+    Info (12023): Found entity 1: altsyncram_k3k1
+Info (12128): Elaborating entity "altsyncram_k3k1" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_a87.tdf
+    Info (12023): Found entity 1: decode_a87
+Info (12128): Elaborating entity "decode_a87" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1|decode_a87:decode3"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_q28.tdf
+    Info (12023): Found entity 1: mux_q28
+Info (12128): Elaborating entity "mux_q28" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|dpram_h811:FIFOram|altsyncram_k3k1:altsyncram1|mux_q28:mux4"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_gpb.tdf
+    Info (12023): Found entity 1: cntr_gpb
+Info (12128): Elaborating entity "cntr_gpb" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|fifo:a|scfifo:scfifo_component|scfifo_s831:auto_generated|a_dpfifo_f031:dpfifo|cntr_gpb:rd_ptr_count"
+Info (12128): Elaborating entity "uart" for hierarchy "VirtualDS2431:vds1|debug:memoryMonitor|uart:u"
+Info (10264): Verilog HDL Case Statement information at uart.v(89): all case item expressions in this case statement are onehot
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "IO_o1" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 20 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/output_files/top.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "IO_i1"
+Info (21057): Implemented 4878 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 4853 logic cells
+    Info (21064): Implemented 16 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4925 megabytes
+    Info: Processing ended: Tue Sep 22 10:16:57 2020
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:01:00
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/15.0 OK without uart/virtualDs2431_15.0_OKWithoutUart/output_files/top.map.smsg.
+
+

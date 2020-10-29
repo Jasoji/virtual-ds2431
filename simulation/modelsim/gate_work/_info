@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\K\OneDrive - stu.jluzh.edu.cn\by-health\program\raspi_ds2413\altera\virtualDs2431\simulation\modelsim
+vVirtualDS2431
+I;;@KcS=iW@gMI2>z82h760
+VL3hMW6a`E3O57L:8o_1XA0
+Z1 dC:\Users\K\OneDrive - stu.jluzh.edu.cn\by-health\program\raspi_ds2413\altera\virtualDs2431\simulation\modelsim
+w1600048756
+8top_8_1200mv_85c_slow.vo
+Ftop_8_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@virtual@d@s2431
+!i10b 1
+!s100 :RCNaI<7Od2C:8LZ7_1;m1
+!s85 0
+!s108 1600052068.777000
+!s107 top_8_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|top_8_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vVirtualDS2431_IO_tb
+!i10b 1
+!s100 RM2RHN_c`Aj5Y=A5KKbDz1
+I1:B;B^g<^GMR^zFENoeEd1
+VibDPbS[ciXK@0MUT4>f^i2
+R1
+w1599233287
+8C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/virtualDs2431/testbench/VirtualDS2431_IO_tb.v
+FC:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/virtualDs2431/testbench/VirtualDS2431_IO_tb.v
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1600052070.261000
+!s107 C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/virtualDs2431/testbench/VirtualDS2431_IO_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/virtualDs2431/testbench|C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/virtualDs2431/testbench/VirtualDS2431_IO_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work {+incdir+C:/Users/K/OneDrive - stu.jluzh.edu.cn/by-health/program/raspi_ds2413/altera/virtualDs2431/testbench} -O0
+n@virtual@d@s2431_@i@o_tb

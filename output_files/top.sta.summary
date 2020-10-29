@@ -1,0 +1,221 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : 6.246
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 8.780
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 9.963
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 14.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 1.606
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 8.986
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : 14.184
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 16.531
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 0.628
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 2.303
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 2.787
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : 9.595
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 9.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 9.785
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 499.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : 6.906
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 8.804
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 10.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 14.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 1.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 9.115
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : 14.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 16.705
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 0.706
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 2.523
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.594
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 9.770
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 9.771
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 499.770
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : 8.934
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 9.449
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 15.393
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 17.612
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 0.633
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 9.465
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : 17.285
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 18.478
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 1.040
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 1.100
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.198
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_main:main|writeToMemory'
+Slack : 9.762
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|posPulse:io1|q'
+Slack : 9.769
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VirtualDS2431:vds1|VirtualDS2431_IO:dsio|usClk'
+Slack : 499.765
+TNS   : 0.000
+
+------------------------------------------------------------
