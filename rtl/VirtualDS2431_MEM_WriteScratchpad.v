@@ -235,7 +235,7 @@ module VirtualDS2431_MEM_WriteScratchpad(nRst,
                                 
                             end
                             else  begin
-                                protectOption = optionBytes<<{3'b0,TA1[6:5],3'b000};
+                                protectOption = optionBytes>>{3'b0,TA1[6:5],3'b000};
                                 case (protectOption)
                                     8'h55: Scratchpad   <= rowDat; //write protected
                                     8'haa: Scratchpad   <= Scratchpad&rowDat; //EPROM
